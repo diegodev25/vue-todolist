@@ -6,6 +6,10 @@
   font-family: 'Lato', sans-serif;
 }
 
+body {
+  background: linear-gradient(90deg, #020024 0%, #090979 35%, #00d4ff 100%);
+}
+
 /* Regole logo boolean */
 .logo {
   display: flex;
@@ -33,19 +37,32 @@
 
 .form > input, button  {
   margin-top: 30px;
-  font-size: 14px;
+  font-size: 15px;
 }
 
 .form input {
   width: 250px;
   height: 36px;
+  text-indent: 10px;
   border-radius: 8px;
+  border: none;
   margin-right: 20px;
+  box-shadow: 1px 1px 17px 3px rgba(0,0,0,0.75);
 }
 
 .form button {
   width: 100px;
   border-radius: 8px;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  background-color: #00e165;
+  box-shadow: 1px 1px 17px 3px rgba(0,0,0,0.75);
+  transition: all 0.2s ease-in-out;
+}
+
+.form button:hover {
+  transform: scale(1.1);
 }
 
 /* Regole Todo list */
