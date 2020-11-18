@@ -6,11 +6,13 @@ const app = new Vue({
     message: null
   },
   methods: {
+    // funzione per inserire l'elemento nella lista
     insertList: function () {
       this.list.push(this.message);
     },
+    // funzione per eliminare l'elemento nella lista
     deleteList: function () {
-      this.list.splice(this.message);
+      this.list.splice(this.message, 1);
     }
   }
 })
