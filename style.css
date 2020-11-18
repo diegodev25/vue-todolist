@@ -1,0 +1,66 @@
+/* Regole generali */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+}
+
+/* Regole logo boolean */
+.logo {
+  display: flex;
+  justify-content: center;
+}
+
+.logo img {
+  width: 350px;
+  margin-top: 30px;
+}
+
+/* Regole Sezione input */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.form {
+  display: flex;
+  justify-content: space-between;
+  width: 400px;
+}
+
+.form > input, button  {
+  margin-top: 30px;
+  font-size: 14px;
+}
+
+.form input {
+  width: 250px;
+  height: 36px;
+  border-radius: 8px;
+  margin-right: 20px;
+}
+
+.form button {
+  width: 100px;
+  border-radius: 8px;
+}
+
+/* Regole Todo list */
+.list-item {
+  width: 60%;
+  height: auto;
+  margin-top: 50px;
+  padding: 10px;
+  background-color: #f5f7f7;
+  border-radius: 8px;
+}
+
+.list-item li {
+  margin: 15px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #dadee1;
+  list-style: none;
+}
