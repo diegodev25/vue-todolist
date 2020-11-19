@@ -10,7 +10,7 @@ const app = new Vue({
     insertList: function () {
       this.list.push(this.message);
     },
-    // funzione per eliminare l'elemento nella lista
+    // funzione per eliminare l'elemento dalla lista
     deleteList: function () {
       this.list.splice(this.message, 1);
     }

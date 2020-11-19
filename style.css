@@ -7,7 +7,7 @@
 }
 
 body {
-  background: linear-gradient(90deg, #020024 0%, #090979 35%, #00d4ff 100%);
+background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
 }
 
 /* Regole logo boolean */
@@ -57,6 +57,8 @@ body {
   border: none;
   cursor: pointer;
   background-color: #00e165;
+  color: white;
+  font-weight:bold;
   box-shadow: 1px 1px 17px 3px rgba(0,0,0,0.75);
   transition: all 0.2s ease-in-out;
 }
@@ -84,7 +86,8 @@ body {
   list-style: none;
 }
 
-.list-item li > a > i {
+.list-item li > i {
   color: #000;
+  cursor: pointer;
   font-size: 20px;
 }
