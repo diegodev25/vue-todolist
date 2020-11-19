@@ -47,7 +47,7 @@ background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
   border-radius: 8px;
   border: none;
   margin-right: 20px;
-  box-shadow: 1px 1px 17px 3px rgba(0,0,0,0.75);
+  box-shadow: 1px 1px 12px 3px rgba(0,0,0,0.75);
 }
 
 .form button {
@@ -59,12 +59,12 @@ background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
   background-color: #00e165;
   color: white;
   font-weight:bold;
-  box-shadow: 1px 1px 17px 3px rgba(0,0,0,0.75);
+  box-shadow: 1px 1px 12px 3px rgba(0,0,0,0.75);
   transition: all 0.2s ease-in-out;
 }
 
 .form button:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 /* Regole Todo list */
@@ -75,13 +75,20 @@ background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
   padding: 10px;
   background-color: #f5f7f7;
   border-radius: 8px;
+  box-shadow: 1px 1px 5px 2px rgba(0,0,0,0.75);
+}
+.list-item h1 {
+  text-align: center;
+  color: #001533;
+  font-size: 36px;
+  margin-top: 12px;
 }
 
 .list-item li {
   display: flex;
   justify-content: space-between;
   margin: 15px;
-  padding-bottom: 10px;
+  padding: 5px 5px 10px 5px;
   border-bottom: 1px solid #dadee1;
   list-style: none;
 }
@@ -90,4 +97,15 @@ background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
   color: #000;
   cursor: pointer;
   font-size: 20px;
+  transition: all 0.12s ease-in-out;
+}
+
+.list-item li > i:hover {
+  transform: scale(1.05);
+  color: red;
+}
+
+/* classe per rimuovere il testo h1 */
+.remove {
+  display: none;
 }

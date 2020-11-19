@@ -8,11 +8,15 @@ const app = new Vue({
   methods: {
     // funzione per inserire l'elemento nella lista
     insertList: function () {
-      this.list.push(this.message);
+      if (this.list.includes(this.message)) {
+        alert("Attenzione, l'elemento è già inserito nella lista. Riprova!");
+      } else {
+        this.list.push(this.message);
+      }
     },
     // funzione per eliminare l'elemento dalla lista
-    deleteList: function () {
-      this.list.splice(this.message, 1);
+    deleteList (i) {
+      this.$delete(this.list, i);
     }
   }
 })
