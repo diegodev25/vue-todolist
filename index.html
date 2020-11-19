@@ -19,7 +19,7 @@
     <!-- Sezione Input -->
     <div id="root" class="container">
       <div class="form">
-        <input v-model="message" type="text" placeholder="Nuovo Todo">
+        <input @keyup.enter="insertList" v-model="message" type="text" placeholder="Nuovo Todo">
         <button @click = "insertList" type="button" name="button">Aggiungi</button>
       </div>
       <!-- Sezione Todo list -->
