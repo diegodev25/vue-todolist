@@ -12,6 +12,7 @@ const app = new Vue({
         alert("Attenzione, l'elemento è già inserito nella lista. Riprova!");
       } else {
         this.list.push(this.message);
+        this.message = '';
       }
     },
     // funzione per eliminare l'elemento dalla lista
